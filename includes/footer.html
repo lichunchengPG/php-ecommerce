@@ -1,0 +1,19 @@
+<!-- Script 1.1 - footer.html -->
+    <br></td>
+  </tr>
+  <tr>
+     <?php 
+     if(isset($_SESSION['user_id'])){// customer has been login:
+	    echo "<td align='right' colspan='3' bgcolor=\"#ffffbb\">{$_SESSION['name']}<a href=\"logout.php\">Logout</a></td>";
+     }else{// No login that show login register:
+        echo "<td align=\"right\" colspan=\"3\" bgcolor=\"#ffffbb\"><a href=\"./login.php\">Login </a><a href=\"./register.php\">Register</a></td>";
+	}
+	?>
+  </tr>
+  <tr>
+    <td align="center" colspan="3" bgcolor='#669966'><font color="#ffffff">&copy;Copyright...</font>
+	</td>
+  </tr>
+  </table>
+  </body>
+  </html>

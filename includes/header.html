@@ -1,0 +1,29 @@
+<?php #Script 1.0 - header.html>
+//This page begins the session, the HTML page, and the layout table.
+session_start(); //start a session.
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/> 
+  <!-- <link> 标签定义文档与外部资源的关系。rel:规定当前文档与被链接文档之间的关系。type:规定被链接文档的 MIME 类型。 media:规定被链接文档将被显示在什么设备上。-->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/> <!--http-equiv相当于http的文件头作用，它可以向浏览器传回一些有用的信息，以帮助正确和精确地显示网页内容 -->
+  <title><?php echo (isset($page_title))?$page_title:'Welcome';?></title> 
+</head>
+
+<body>
+<table cellpadding='0' cellspacing='0' border='0' align="center" width="600">
+  <tr id="title_thead">
+    <td align="center" colspan='3'><img src="../image/bookline.jpg" width="600" height='90' border="0" alt="title"></td>
+  </tr>
+  <div id="navigation">
+  <tr>
+    <td align="center" width='100' height='30' border='0' bgcolor="#ddddff"><a class="title_nav" href="index.php"><b>Home Page</b></a></td>
+    <td align="center"  width='100' height='30' border='0' bgcolor="#bbccff"><a class="title_nav" href="browse_books.php"><b>View Book</b></a></td>
+	<td align="center" width='100' height='30' border='0' bgcolor="#ddddff"><a class="title_nav" href="view_cart.php"><b>View Your Cart</b></a></td>
+  </tr>
+  </div>
+    <td align="left" colspan='3' bgcolor="#ffffbb"><br>
+ 	
+ 
+
